@@ -25,8 +25,6 @@ export default {
 <style lang="scss" scoped>
 footer {
   background: $background-dark;
-
-  // height: 12vh;
 }
 
 .top {
@@ -59,8 +57,12 @@ footer {
   padding-bottom: 15px;
 
   &_text {
-    margin: 0 15px;
+    margin: 0 30px;
     font-size: 18px;
+  }
+
+  &_medias {
+    margin-right: 10px;
   }
 }
 </style>

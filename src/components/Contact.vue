@@ -72,7 +72,7 @@ export default {
     color: #fff;
 
     margin: 0 10px;
-    padding: 5px 10px;
+    padding: 5px 15px 5px 10px;
 
     border: none;
     border-radius: 10px;
