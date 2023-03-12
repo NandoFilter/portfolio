@@ -8,18 +8,21 @@
       </p>
       <button class="content_btn">Me contate</button>
     </div>
+    <div class="follow">
+      <p class="follow_label">Me siga</p>
+      <SocialMedias />
+    </div>
   </div>
 </template>
 
 <script>
 import Header from "./Header.vue";
+import SocialMedias from "./SocialMedias.vue";
 
 export default {
   components: {
     Header,
-  },
-  setup() {
-    return {};
+    SocialMedias,
   },
 };
 </script>
@@ -29,20 +32,16 @@ export default {
   width: 100%;
   height: 75vh;
 
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -4.6px;
 
-  background: linear-gradient(180deg, #1b1f24 0%, #1b1f24 100%);
+  background: $background-dark;
 }
 
 .content {
   position: absolute;
-
-  width: 837px;
-  height: 233px;
-
+  top: 35%;
   left: 75px;
-  top: 250px;
 
   &_line {
     width: 175px;
@@ -74,6 +73,22 @@ export default {
     font-size: 24px;
 
     color: #ffffff;
+  }
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+
+  &_label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
   }
 }
 </style>

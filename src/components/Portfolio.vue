@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="portfolio">
     <Apresentation />
   </div>
 </template>
@@ -17,4 +17,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.portfolio {
+  height: 200vh;
+}
+</style>

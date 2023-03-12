@@ -1,24 +1,24 @@
 <template>
   <header>
-    <img src="@/assets/img/logo.svg" alt="" />
-    <li class="options">
-      <ul>
-        Home
-      </ul>
-      <ul>
-        Sobre
-      </ul>
-      <ul>
-        Contato
-      </ul>
-    </li>
+    <img src="@/assets/img/logo.svg" />
+    <ul class="options">
+      <li class="option" v-for="option in this.options" :key="option">
+        <a :href="option.href">{{ option.label }}</a>
+      </li>
+    </ul>
   </header>
 </template>
 
 <script>
 export default {
-  setup() {
-    return {};
+  data() {
+    return {
+      options: [
+        { label: "Home", href: "#home" },
+        { label: "Sobre", href: "#about" },
+        { label: "Contato", href: "#contact" },
+      ],
+    };
   },
 };
 </script>
@@ -29,6 +29,7 @@ header {
   justify-content: space-between;
 
   margin: 5px 75px;
+  padding-top: 10px;
 }
 
 .options {
@@ -38,7 +39,17 @@ header {
   list-style: none;
 }
 
-.options ul {
+.option {
   font-size: 20px;
+  padding: 0 18px;
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: $primary-color;
+  }
 }
 </style>
