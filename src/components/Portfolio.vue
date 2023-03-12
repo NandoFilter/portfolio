@@ -6,6 +6,7 @@
       <Techs />
       <Contact />
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Apresentation from "./Apresentation.vue";
 import AboutMe from "./AboutMe.vue";
 import Techs from "./Techs.vue";
 import Contact from "./Contact.vue";
+import Footer from "./parts/Footer.vue";
 
 export default {
   components: {
@@ -21,6 +23,7 @@ export default {
     AboutMe,
     Techs,
     Contact,
+    Footer,
   },
   setup() {
     return {};
@@ -28,8 +31,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .portfolio {
   height: auto;
+
+  background: $background;
 }
 </style>
