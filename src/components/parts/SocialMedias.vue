@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     getImg(name) {
-      return require(`@/assets/img/${name}`);
+      return require(`@/assets/img/medias/${name}`);
     },
   },
 };

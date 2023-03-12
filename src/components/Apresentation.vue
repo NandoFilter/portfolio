@@ -8,6 +8,7 @@
       </p>
       <button class="content_btn">Me contate</button>
     </div>
+    <img class="photo" src="@/assets/img/photo.png" />
     <div class="follow">
       <p class="follow_label">Me siga</p>
       <SocialMedias />
@@ -16,8 +17,8 @@
 </template>
 
 <script>
-import Header from "./Header.vue";
-import SocialMedias from "./SocialMedias.vue";
+import Header from "./parts/Header.vue";
+import SocialMedias from "./parts/SocialMedias.vue";
 
 export default {
   components: {
@@ -42,6 +43,8 @@ export default {
   position: absolute;
   top: 35%;
   left: 75px;
+
+  z-index: 1;
 
   &_line {
     width: 175px;
@@ -74,6 +77,14 @@ export default {
 
     color: #ffffff;
   }
+}
+
+.photo {
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+
+  width: 40%;
 }
 
 .follow {

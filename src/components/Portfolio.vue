@@ -1,15 +1,18 @@
 <template>
   <div class="portfolio">
     <Apresentation />
+    <AboutMe />
   </div>
 </template>
 
 <script>
-import Apresentation from "./parts/Apresentation.vue";
+import Apresentation from "./Apresentation.vue";
+import AboutMe from "./AboutMe.vue";
 
 export default {
   components: {
     Apresentation,
+    AboutMe,
   },
   setup() {
     return {};
@@ -19,6 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
-  height: 200vh;
+  height: auto;
 }
 </style>
