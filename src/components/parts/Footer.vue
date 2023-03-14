@@ -6,7 +6,7 @@
       <span class="top_line" />
     </div>
     <div class="bottom">
-      <p class="bottom_text">&#169; Made by NandoFilter - 2023</p>
+      <p class="bottom_text">&#169; 2023 NandoFilter</p>
       <SocialMedias class="bottom_medias" />
     </div>
   </footer>
